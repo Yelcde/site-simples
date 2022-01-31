@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Signika:wght@300;400;500&display=swap');
+
+:root{
+    --cor1: #282E2E;
+    --cor2: #274F68;
+    --cor3: #7A94A3;
+    --cor4: #B4B2B3;
+    --cor5: #545452;
+
+    --font1: 'Oxygen', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    font-family: var(--font1);
+}
+
+header{
+    background-color: var(--cor4);
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu, .conta{
+    font-size: 20px;
+}
+
+.itens{
+    display: flex;
+    list-style: none;
+}
+
+.itens > li{
+    padding: 20px
+}
+
+.conta{
+    display: flex;
+}
+
+.conta > p{
+    padding: 10px;
+}
+
+                    /* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    height: 100%; 
+    width: 95%;
+
+}
