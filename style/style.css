@@ -141,6 +141,7 @@ main{
 
 .foto{
     position: relative;
+    z-index: 1;
     background: url('../images/natal.jpg') no-repeat black;
     background-position: center center;
     background-size: cover;
@@ -148,6 +149,7 @@ main{
     height: 600px;
     margin-top: 92px;
     overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.637);
 }
 
 .texto{
@@ -163,6 +165,7 @@ main{
     font-weight: bold;
     color: var(--cor2);
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .final{
@@ -172,4 +175,23 @@ main{
 
 .final > h1{
     margin: auto;
+}
+
+@media (max-width: 1137px){
+    .texto{
+        max-width: 450px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 767px){
+    .texto{
+        display: block
+    }
+}
+
+@media (max-width: 836px){
+    header{
+        position: absolute;
+    }
 }
